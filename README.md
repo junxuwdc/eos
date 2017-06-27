@@ -40,7 +40,7 @@ To use the library in your own project, just add the following directories to yo
 * `eos/3rdparty/eigen/Eigen`
 * `eos/3rdparty/eigen3-nnls/src`
 
-## Installation in Ubuntu
+## Installation in Ubuntu (with Python Binding)
 
 * installl the following packages/libraries:
 
