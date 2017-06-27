@@ -40,6 +40,27 @@ To use the library in your own project, just add the following directories to yo
 * `eos/3rdparty/eigen/Eigen`
 * `eos/3rdparty/eigen3-nnls/src`
 
+## Installation in Ubuntu
+
+* installl the following packages/libraries:
+sudo apt-get install libboost-all-dev libopencv-dev python-opencv libeigen3-dev libopencv-imgproc-dev libopencv-highgui-dev libcereal-dev clang-3.9
+
+* git clone the following source file to the corresponding folders: (click into the eos/3rdparty/ folder to find the links in github)
+`eos/include`
+`eos/3rdparty/cereal/include`
+`eos/3rdparty/glm`
+`eos/3rdparty/nanoflann/include`
+`eos/3rdparty/eigen/Eigen`
+`eos/3rdparty/eigen3-nnls/src`
+
+* in the folder eos/: 
+cmake -DEOS_GENERATE_PYTHON_BINDINGS=on
+./setup.py build
+./setup.py install
+
+* in the folder /eos/examples (test the example)
+make
+
 **Make sure to clone with `--recursive` to download the required submodules!**
 
 ### Build the examples and tests
